@@ -3,10 +3,34 @@ layout: default
 robots: noindex
 ---
 
+<section>
+  <h2>Hi! I am Arushi</h2>
+  <p>I’m a <strong>Senior Hardware Analytics Engineer at Meta</strong>, working on hardware reliability, fleet power, silicon analytics, and aging studies across large-scale systems.</p>
+  <p>My work focuses on understanding how silicon behaves in the real world — how power, performance, reliability, and aging show up across the fleet, and how data can help detect issues earlier and make better engineering decisions.</p>
+  <h3>Focus areas</h3>
+  <ul>
+    <li>Hardware reliability &amp; fleet health</li>
+    <li>Power &amp; performance analysis</li>
+    <li>Silicon aging &amp; degradation studies</li>
+    <li>Large-scale telemetry &amp; data-driven decision making</li>
+    <li>Building analytics systems that connect engineering signals to business impact</li>
+  </ul>
+  <h3>Interests &amp; passions</h3>
+  <ul>
+    <li>Exploring how systems behave at scale</li>
+    <li>Data storytelling &amp; visualization</li>
+    <li>Mentoring &amp; community building</li>
+  </ul>
+  <p>Pronouns: she/her</p>
+  <p>Find me on <a href="https://scholar.google.com/citations?user=TjRAzzIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>, <a href="https://github.com/Arushi04" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://www.linkedin.com/in/arushi04" target="_blank" rel="noopener noreferrer">LinkedIn</a>, and <a href="https://twitter.com/arushi04_" target="_blank" rel="noopener noreferrer">Twitter</a>.</p>
+</section>
+
+<h2>Selected earlier projects</h2>
+
 <!--<div class="main-post-list">-->
 
   <ul class="timeline">
-    
+
     {% for project in site.data.projects %}
 
       <li class="timeline-inverted">
@@ -22,19 +46,19 @@ robots: noindex
             <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn" style="margin-top: 10px;">
               <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers"><i class="fa fa-star"></i><span class="star"> ...</span></a>&emsp;&emsp;
               <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network"><i class="fa fa-code-fork"></i><span class="fork"> ...</span></a>&emsp;&emsp;
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers"><i class="far fa-eye"></i><span class="watchers">...</span></a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers">
+              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers"><i class="far fa-eye"></i><span class="watchers">...</span></a> target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers">
               <div style="height: 10px;"></div>
+            </div>
           </div>
         </div>
       </li>
+
     {% endfor %}
     <!--
-    <li class="timeline-inverted">
-      <div class="timeline-image">
-        <img class="user-image" src="{{site.baseurl}}{{ site.timeline-img }}" alt="">
-      </div>
-    </li> -->
+      <li class="timeline-inverted">
+        <div class="timeline-image">
+          <img class="user-image" src="{{site.baseurl}}{{ site.timeline-img }}" alt="">
+        </div>
+      </li> -->
   </ul>
-
 <!--</div>-->
-
